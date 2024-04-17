@@ -1,0 +1,25 @@
+.signupContainer{
+    background-color: rgb(243, 243, 243);
+    min-height: 100vh;
+}
+.signHeadContainer{
+    display: flex;
+    justify-content: center;
+    height: 50px;
+}
+.formContainer{
+    width: 50%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+@media (max-width: 750px) {
+    .formContainer{
+        width: 100%;
+        
+    }
+	
+}

@@ -1,0 +1,47 @@
+.headerContainer{
+    display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+	
+}
+.hDContainer{
+
+	display: flex;
+	flex-direction: row;
+	
+}
+
+.hGContainer, .hCContainer, .hDContainer{
+	width: 200px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.hDContainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.hDContainer p{
+	text-align: center;
+}
+.hGContainer{
+	justify-content: flex-start;
+	margin-left: 5px;
+}
+
+@media (max-width: 500px) {
+    .hDContainer{
+		display: flex;
+		flex-direction: column;
+		
+	}
+	.hGContainer, .hCContainer, .hDContainer{
+		width: 100px;
+		
+	}
+	
+}

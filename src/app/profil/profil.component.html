@@ -1,0 +1,26 @@
+<div class="pageContainer">
+    <app-header></app-header>
+    <div class="profilContainer">
+        <nav class="navbavMenuContainer">
+            <div class="navbavMenuContainer-titre">
+                <h1>Paramètre</h1>
+            </div>
+            
+            <div class="navbavMenuContainer-btn">
+                <div class="navbavMenuContainer-btn-div">
+                    <button (click)="navigateToNotification()">Notification</button>
+                    <button (click)="navigateToCompte()">compte</button>
+                    <button (click)="navigateToHistorique()">Historique d'achat</button>
+                </div>
+                
+            </div>
+            
+        </nav>
+        <main class="mainContainer">
+            <app-notification *ngIf="selectedComponent === 'NotificationComponent'"></app-notification>
+            <app-compte *ngIf="selectedComponent === 'CompteComponent'"></app-compte>
+            <app-historique *ngIf="selectedComponent === 'HistoriqueComponent'"></app-historique>
+        </main>
+    </div>
+    
+</div>

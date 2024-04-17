@@ -1,0 +1,21 @@
+<div class="pageContainer">
+    <!-- <app-header></app-header> -->
+    <div class="signHeadContainer">
+        <h1><a routerLink="/">E shop</a></h1>
+    </div>
+    
+    <div class="formContainer">
+        
+        <ng-container *ngIf="type === 'inscription'">
+            <app-inscription></app-inscription>
+        </ng-container>
+        
+        <ng-container *ngIf="type === 'connexion'">
+            <app-connexion></app-connexion>
+        </ng-container>
+        
+        
+    </div>
+
+    
+</div>
